@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05c669353c780bbd5aef06c13a2b25c0",
+    "revision": "4fc533fe655eb44c3fb8c46d12c764c8",
     "url": "/filmproject/index.html"
   },
   {
-    "revision": "34b61ae4524533801cb2",
-    "url": "/filmproject/static/css/main.5f361e03.chunk.css"
+    "revision": "e4b6a72626ba9416a8b8",
+    "url": "/filmproject/static/css/main.c9c92d0e.chunk.css"
   },
   {
     "revision": "26c839d26fc6b01d59f1",
@@ -16,15 +16,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/filmproject/static/js/2.badde1f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34b61ae4524533801cb2",
-    "url": "/filmproject/static/js/main.7c51a853.chunk.js"
+    "revision": "e4b6a72626ba9416a8b8",
+    "url": "/filmproject/static/js/main.0d310a31.chunk.js"
   },
   {
     "revision": "cdf96dc57b33f7d96989",
     "url": "/filmproject/static/js/runtime-main.1cbc2c7f.js"
-  },
-  {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/filmproject/static/media/logo.5d5d9eef.svg"
   }
 ]);
