@@ -15,6 +15,7 @@ const FilmListing = (props) => {
         key={film.id}
         onFaveToggle={() => props.onFaveToggle(film)}
         isFave={props.faves.includes(film)}
+        onDetailsClick={()=>props.onDetailsClick(film)}
       />
     );
   });

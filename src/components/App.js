@@ -20,14 +20,16 @@ function App() {
     setFaves(favesArray);
   };
 
- 
+  const handleDetailsClick = film => {
+    setCurrent(film);
+  };
   return (
     <div className="film-library">
       <FilmListing
         films={films}
         faves={faves}
         onFaveToggle={handleFaveToggle}
-        
+        onDetailsClick={handleDetailsClick}
       />
       <FilmDetails films={current} />
     </div>

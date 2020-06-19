@@ -9,7 +9,7 @@ const FilmRow = (props) => {
     <div
       className="film-row"
       id={props.film.id}
-      onClick={props.handleDetailsClick}
+      onClick={()=>props.onDetailsClick}
     >
       <Poster posterUrl={props.film} />
       <div className="film-summary">
