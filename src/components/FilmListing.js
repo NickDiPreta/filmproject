@@ -2,12 +2,22 @@ import React, { useState } from "react";
 import FilmRow from "./FilmRow";
 
 const FilmListing = (props) => {
-  const allFilms = [];
-  props.films.map((each) => {
-    allFilms.push(<FilmRow film={each} />);
-  });
+ 
   const [filter, setFilter] = useState("all");
-  const handleFilterClick = (filter) => setFilter(filter);
+  const films = filter === 'faves' ? props.faves : props.films;
+  const handleFilterClick = (filter) => {
+    setFilter(filter)
+  }
+  const allFilms = films.map((film) => {
+    return (
+      <FilmRow
+        film={film}
+        key={film.id}
+        onFaveToggle={() => props.onFaveToggle(film)}
+        isFave={props.faves.includes(film)}
+      />
+    );
+  });
   return (
     <div className="film-list">
       <h1 className="section-title">FILMS</h1>
@@ -26,7 +36,7 @@ const FilmListing = (props) => {
           onClick={() => handleFilterClick("faves")}
         >
           FAVES
-          <span className="section-count">0</span>
+          <span className="section-count">{props.faves.length}</span>
         </div>
       </div>
 
